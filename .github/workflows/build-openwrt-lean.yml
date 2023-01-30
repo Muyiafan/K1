@@ -10,6 +10,7 @@
 name: Build OpenWrt PSG1218A
 
 on:
+  workflow_dispatch:
   repository_dispatch:
 #  release:
 #    types: published
@@ -18,8 +19,8 @@ on:
 #      - master
 #    paths:
 #      - '.config'
-  schedule:
-    - cron: 0 15 */25 * *
+#   schedule:
+#     - cron: 0 15 */25 * *
 #          分 时 日 月 周5
 #   - cron: 0 8 */3 * *
 #  watch:
